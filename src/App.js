@@ -15,7 +15,8 @@ const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
     checkUserSession();
   }, [checkUserSession]);
-
+  // we can also create custom hooks useFetch as an example if remember.
+  // for redux, useReducer is an option
   return (
     <div>
       <Header />
