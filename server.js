@@ -5,10 +5,10 @@ const path = require("path");
 
 if (process.env.NODE_ENV !== "production") require("dotenv").config(); // will look for .env file in root and add data to process
 
-const stripe = require("stripe")(process.env.STRIPE_SCRENT_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
-const port = propcess.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
