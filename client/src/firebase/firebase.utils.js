@@ -90,3 +90,45 @@ googleProvider.setCustomParameters({ prompt: 'select_account' });
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 
 export default firebase;
+
+
+//rules_version = '2';
+//service cloud.firestore {
+ // match /databases/{database}/documents {
+
+    /* // This rule allows anyone on the internet to view, edit, and delete
+    // all data in your Firestore database. It is useful for getting
+    // started, but it is configured to expire after 30 days because it
+    // leaves your app open to attackers. At that time, all client
+    // requests to your Firestore database will be denied.
+    //
+    // Make sure to write security rules for your app before that time, or else
+    // your app will lose access to your Firestore database
+    	// allow write -> create and update and delete
+      // allow create, update; -> create and update
+      // allow read -> get and list
+      // allow get -> get specific document only
+      // allow list -> get list but not specific document
+      // allow read, write: if request.time < timestamp.date(2020, 12, 25);
+*/
+   //match /{document=**} {
+     // allow read;
+     // allow create, update;
+
+    //}
+  //}
+//}
+
+
+//rules_version = '2';
+//service cloud.firestore {
+  //match /databases/{database}/documents {
+//     match /users/{userId} {
+  //    allow get, create: if request.auth != null && request.auth.uid == userId;
+   // }
+ //  match /collections/{collection} {
+ // 	allow read;
+  //  allow write: if request.auth != null && request.auth.uid == "7zdHKiLsCkVAYUVEezuFwOZ4p9j2";
+ // }
+ // }
+//}
