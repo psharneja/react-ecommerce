@@ -128,7 +128,7 @@ export default firebase;
    // }
  //  match /collections/{collection} {
  // 	allow read;
-  //  allow write: if request.auth != null && request.auth.uid == "7zdHKiLsCkVAYUVEezuFwOZ4p9j2";
+  //  allow write: if request.auth != null && request.auth.uid == "myuserid";
  // }
  // }
 //}
