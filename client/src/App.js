@@ -62,3 +62,10 @@ export default connect(
 //memo and pureComponents <- performance 
 // useCallback rerender only method which is called
 // useMemo cache value of a function instead of recalling; it only recomputes if dependency has a change
+// https://houssein.me/progressive-react
+// imp for PWA https://whatwebcando.today/
+// https://realfavicongenerator.net/
+// https://www.cloudflare.com/en-in/
+// https://letsencrypt.org/docs/
+// https://jakearchibald.github.io/isserviceworkerready/
+// sw-precache
